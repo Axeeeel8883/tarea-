@@ -1,0 +1,9 @@
+package pe.edu.upeu.pharmamobil.platform
+
+import java.text.NumberFormat
+import java.util.Locale
+
+actual fun formatearSoles(valor: Double): String {
+    val formatter = NumberFormat.getCurrencyInstance(Locale("es", "PE"))
+    return formatter.format(valor)
+}

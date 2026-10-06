@@ -1,7 +1,9 @@
-.gradle/
-build/
-**/build/
-.idea/
-local.properties
-.DS_Store
 *.iml
+.gradle
+/local.properties
+/.idea
+.DS_Store
+/build
+**/build
+.kotlin
+xcuserdata

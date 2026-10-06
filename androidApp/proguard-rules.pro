@@ -1,0 +1,1 @@
+# PharmaMobil - reglas ProGuard

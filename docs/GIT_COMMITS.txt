@@ -1,0 +1,6 @@
+Commits recomendados para la actividad:
+
+1. docs: registrar inventario de capacidades nativas
+2. docs: agregar informe comparativo Android iOS
+3. feat: implementar informacion del dispositivo con expect actual
+4. docs: actualizar README y evidencias sesion 09

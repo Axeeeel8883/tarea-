@@ -16,7 +16,7 @@ val dataModule = module {
 
 val presentationModule = module {
     viewModel { ProductoViewModel(get()) }
-    viewModel { DetalleProductoViewModel(get()) }
+    viewModel { DetalleProductoViewModel(get(), get()) }
 }
 
 expect val platformModule: Module

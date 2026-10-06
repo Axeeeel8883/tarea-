@@ -25,6 +25,7 @@ fun App() {
 
         Surface(modifier = Modifier.fillMaxSize()) {
             val id = productoSeleccionado
+
             if (id == null) {
                 ProductoScreen(
                     productos = productoViewModel.productos,
@@ -32,12 +33,14 @@ fun App() {
                 )
             } else {
                 val producto = detalleViewModel.obtener(id)
+
                 if (producto == null) {
                     productoSeleccionado = null
                 } else {
                     DetalleProductoScreen(
                         producto = producto.toUi(),
-                        onVolver = { productoSeleccionado = null }
+                        onVolver = { productoSeleccionado = null },
+                        onCompartir = { detalleViewModel.compartir(producto) }
                     )
                 }
             }
